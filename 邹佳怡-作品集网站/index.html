@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>邹佳怡 · 作品集 | 产品设计 · IP 设计 · AIGC 漫剧 · 运营数据</title>
+<meta name="description" content="邹佳怡的作品集：产品设计、IP 设计、AIGC 漫剧与内容运营数据。成都文理学院数字媒体艺术专业 2027 届。" />
+<meta name="theme-color" content="#FAF8F5" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="glow glow--1" aria-hidden="true"></div>
+<div class="glow glow--2" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark">邹</span>
+      <span class="brand__text">邹佳怡<em>ZOU JIAYI</em></span>
+    </a>
+    <nav class="topnav">
+      <a href="#about">自我介绍</a>
+      <a href="#works">作品集</a>
+      <a href="#contact">联系方式</a>
+      <a class="btn-resume" href="assets/resume.pdf" target="_blank" rel="noopener">下载简历</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="about" id="about">
+    <div class="about__inner">
+
+      <aside class="profile reveal">
+        <div class="portrait">
+          <span class="portrait__frame" aria-hidden="true"></span>
+          <img src="assets/avatar.jpg" alt="邹佳怡" />
+        </div>
+        <h1 class="profile__name">邹佳怡</h1>
+        <p class="profile__role">内容策划 · 运营 · AIGC 视觉创作</p>
+        <ul class="profile__tags">
+          <li>数字媒体艺术</li>
+          <li>成都文理学院</li>
+          <li>2027 届</li>
+          <li>英语四级</li>
+        </ul>
+      </aside>
+
+      <div class="intro">
+        <p class="eyebrow reveal"><span></span>About Me</p>
+        <h2 class="intro__headline reveal" id="introHeadline"></h2>
+        <div class="intro__body reveal" id="introBody"></div>
+        <dl class="stats reveal" id="statsRow"></dl>
+        <div class="tools reveal">
+          <p class="tools__label">常用工具</p>
+          <ul class="tools__list" id="toolRow"></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cats" id="cats">
+      <div class="cats__hint reveal">
+        <span>Selected Works</span>
+        <em>四个板块，点击展开 ↓</em>
+      </div>
+      <div class="cats__grid reveal" id="catsGrid"></div>
+    </div>
+  </section>
+
+  <section class="works" id="works" data-cat="product">
+    <div class="works__inner">
+      <header class="works__head">
+        <div class="works__headL">
+          <p class="eyebrow"><span></span><em id="worksEn">Product Design</em></p>
+          <h2 class="works__title" id="worksTitle">产品设计</h2>
+        </div>
+        <p class="works__desc" id="worksDesc"></p>
+      </header>
+      <div class="works__body" id="worksBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="footer__inner">
+    <div class="footer__lead">
+      <p class="eyebrow eyebrow--light"><span></span>Contact</p>
+      <h2>Hello，<br />期待和您继续沟通</h2>
+      <p class="footer__sub">邹佳怡 · 成都文理学院数字媒体艺术 · 2027 届</p>
+    </div>
+    <ul class="footer__list" id="contactList"></ul>
+    <p class="footer__note">© <span id="year"></span> 邹佳怡 · 作品集 · Portfolio</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" type="button" data-close aria-label="关闭">×</button>
+    <button class="modal__nav modal__nav--prev" type="button" aria-label="上一张">‹</button>
+    <button class="modal__nav modal__nav--next" type="button" aria-label="下一张">›</button>
+    <div class="modal__scroll" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
